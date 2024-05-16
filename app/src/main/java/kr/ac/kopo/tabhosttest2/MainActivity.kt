@@ -55,11 +55,11 @@ class MainActivity : AppCompatActivity(), ActionBar.TabListener {
     }
 
     override fun onTabUnselected(tab: ActionBar.Tab?, ft: FragmentTransaction?) {
-        TODO("Not yet implemented")
+
     }
 
     override fun onTabReselected(tab: ActionBar.Tab?, ft: FragmentTransaction?) {
-        TODO("Not yet implemented")
+
     }
 
 //  탭을 선택하면 변경내는 Content로 Fragment를 사용
@@ -77,11 +77,11 @@ class MainActivity : AppCompatActivity(), ActionBar.TabListener {
             linear.layoutParams = params
             linear.orientation = LinearLayout.VERTICAL
 
-            if(tabName === "FirstTab" )
+            if(tabName === "firstTab" )
                 linear.setBackgroundColor(Color.MAGENTA)
-            if(tabName === "SecondTab" )
+            if(tabName === "secondTab" )
                 linear.setBackgroundColor(Color.YELLOW)
-            if(tabName === "ThirdTab" )
+            if(tabName === "thirdTab" )
                 linear.setBackgroundColor(Color.GREEN)
 
             return linear
